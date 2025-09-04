@@ -14,7 +14,9 @@ body {
     padding-left: 30px;
     font-size: 32px;
     font-weight: bold;
+
     background: rgba(255, 255, 255, 0)
+
 }
 
 .navbar p {
@@ -43,6 +45,7 @@ body {
     z-index: 1;
     pointer-events: none;
 }
+
 
 .bghal1 {
     width: 100vw;
@@ -260,6 +263,8 @@ body {
     margin-left: 150px;
 }
 
+
+
 .dosq {
     background-color: #04105685; 
     border-radius: 12px;    
@@ -424,6 +429,7 @@ body {
     transform: translateY(-20px);
 }
 
+
 /* Grid container */
 .project {
     margin-top: 100px;
@@ -433,6 +439,7 @@ body {
     height: 700px;
     width: 500px;
 }
+
 
 .kp1 {
     margin-top: 30px;
@@ -468,6 +475,7 @@ body {
     font-size: 15px;
     line-height: 1;
 }
+
 
 .hal4::after {
     content: "";
@@ -633,75 +641,84 @@ body {
     transform: translateY(-20px);
 }
 
-/* ============================= */
-/*          RESPONSIVE           */
-/* ============================= */
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
+
     .nama {
-        margin-left: 20px;
-        margin-top: 150px;
+        margin: 100px auto 20px auto !important;
         text-align: center;
     }
-
-    .nd { font-size: 32px; }
-    .nb { font-size: 48px; }
-    .nama h3 { font-size: 18px; }
+    .nd { font-size: 32px !important; }
+    .nb { font-size: 44px !important; }
+    .nama h3 { font-size: 16px !important; }
 
     .link {
-        margin: 50px auto 20px auto;
-        flex-direction: column;
-        align-items: center;
+        margin: 30px auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
-
     .link a {
-        margin: 10px 0;
-        font-size: 18px;
+        margin: 10px 0 !important;
+        font-size: 16px !important;
     }
 
     .judul {
-        margin-left: 20px;
-        margin-top: 100px;
-        text-align: center;
+        margin: 20px auto !important;
+        text-align: center !important;
     }
-
+    .tentang { font-size: 28px !important; }
+    .email { font-size: 16px !important; }
     .hal2 p {
-        padding: 20px;
-        margin-top: 50px;
-        font-size: 16px;
+        margin: 20px auto !important;
+        padding: 0 20px !important;
+        font-size: 14px !important;
     }
 
     .sma, .kuliah {
-        flex-direction: column;
-        margin: 20px auto;
-        text-align: center;
+        flex-direction: column !important;
+        margin: 20px auto !important;
+        text-align: center !important;
     }
-
+    .sma img, .kuliah img {
+        width: 100px !important;
+        height: auto !important;
+    }
     .j1, .j2 {
-        margin-left: 0;
-        font-size: 18px;
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        font-size: 16px !important;
     }
 
+    .hal4 {
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+        padding: 20px !important;
+    }
     .pengalaman, .project {
-        width: 90%;
-        margin: 20px auto;
+        width: 90% !important;
+        margin: 10px auto !important;
+        height: auto !important;
     }
 
+    .hal5 {
+        height: auto !important;
+        padding: 20px !important;
+    }
     .hal5_2 {
-        flex-direction: column;
-        margin: 20px;
+        flex-direction: column !important;
+        margin: 20px auto !important;
     }
-
     .bh5, .bh5_1, .bh5_2, .bh5n, .bh5n_2 {
-        width: 100%;
-        margin: 10px 0;
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding: 15px !important;
     }
-
     .gbh5 {
-        width: 80px;
+        width: 60px !important;
     }
-
     .jh5 {
-        margin: 50px auto 20px auto;
-        text-align: center;
+        margin: 20px auto !important;
+        text-align: center !important;
+        font-size: 24px !important;
     }
 }
