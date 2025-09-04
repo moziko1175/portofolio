@@ -14,9 +14,7 @@ body {
     padding-left: 30px;
     font-size: 32px;
     font-weight: bold;
-
     background: rgba(255, 255, 255, 0)
-
 }
 
 .navbar p {
@@ -45,7 +43,6 @@ body {
     z-index: 1;
     pointer-events: none;
 }
-
 
 .bghal1 {
     width: 100vw;
@@ -263,8 +260,6 @@ body {
     margin-left: 150px;
 }
 
-
-
 .dosq {
     background-color: #04105685; 
     border-radius: 12px;    
@@ -429,7 +424,6 @@ body {
     transform: translateY(-20px);
 }
 
-
 /* Grid container */
 .project {
     margin-top: 100px;
@@ -439,7 +433,6 @@ body {
     height: 700px;
     width: 500px;
 }
-
 
 .kp1 {
     margin-top: 30px;
@@ -475,7 +468,6 @@ body {
     font-size: 15px;
     line-height: 1;
 }
-
 
 .hal4::after {
     content: "";
@@ -639,4 +631,77 @@ body {
 
 .bh5n_2:hover {
     transform: translateY(-20px);
+}
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+@media (max-width: 768px) {
+    .nama {
+        margin-left: 20px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .nd { font-size: 32px; }
+    .nb { font-size: 48px; }
+    .nama h3 { font-size: 18px; }
+
+    .link {
+        margin: 50px auto 20px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .judul {
+        margin-left: 20px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .hal2 p {
+        padding: 20px;
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .sma, .kuliah {
+        flex-direction: column;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .j1, .j2 {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .pengalaman, .project {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .hal5_2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .bh5, .bh5_1, .bh5_2, .bh5n, .bh5n_2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .gbh5 {
+        width: 80px;
+    }
+
+    .jh5 {
+        margin: 50px auto 20px auto;
+        text-align: center;
+    }
 }
