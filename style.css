@@ -702,11 +702,10 @@ body {
 
     .hal5 {
         height: auto !important;
-        padding: 20px !important;
     }
     .hal5_2 {
         flex-direction: column !important;
-        margin: 20px auto !important;
+        margin: auto !important;
     }
     .bh5, .bh5_1, .bh5_2, .bh5n, .bh5n_2 {
         width: 100% !important;
@@ -720,5 +719,16 @@ body {
         margin: 20px auto !important;
         text-align: center !important;
         font-size: 24px !important;
+    }
+    .hal3 h2 {
+        margin: 20px auto !important;
+        text-align: center !important;
+        font-size: 28px !important;
+    }
+
+    .jh5 {
+        margin: 20px auto !important;
+        text-align: center !important;
+        font-size: 26px !important;
     }
 }
