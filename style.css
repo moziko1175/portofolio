@@ -643,6 +643,26 @@ body {
 
 @media (max-width: 1220px) {
 
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+
+    .navbar p {
+        padding-left: 110px;
+    }
+
+    .hal1 {
+        width: 100%;
+    }
+    .bghal1 {
+        width: 101.7%;
+    }
+
     .nama {
         margin: 100px auto 20px auto !important;
         text-align: center;
@@ -652,27 +672,71 @@ body {
     .nama h3 { font-size: 16px !important; }
 
     .link {
+        padding-top: 100px !important;
         margin: 30px auto !important;
         flex-direction: column !important;
         align-items: center !important;
     }
     .link a {
         margin: 10px 0 !important;
-        font-size: 16px !important;
+        font-size: 25px !important;
+    }
+
+    .hal1::after {
+        width: 101.7%;
+    }
+
+    /*------------hal2---------------------*/
+
+    .hal2::before {
+        width: 101.7%;
+    }
+
+    .bghal2 {
+        width: 101.7%;
     }
 
     .judul {
+        padding-top: 200px;
         margin: 20px auto !important;
         text-align: center !important;
     }
     .tentang { font-size: 28px !important; }
     .email { font-size: 16px !important; }
     .hal2 p {
+        padding-top: 100px !important;
         margin: 20px auto !important;
-        padding: 0 20px !important;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 14px !important;
+        text-align: center;
     }
 
+    .hal2 p:hover {
+        transform: scale(1.1);
+        transition: transform 2s ease;
+    }
+
+    .hal2::after {
+        width: 101.7%;
+    }
+
+    /*------------hal3---------------------*/
+
+    .hal3::before {
+        width: 101.7%;
+    }
+
+    .bghal3 {
+        width: 101.7%;
+    }
+
+    .hal3 h2 {
+        padding-top: 200px;
+        margin: 20px auto !important;
+        text-align: center !important;
+        font-size: 28px !important;
+    }
     .sma, .kuliah {
         flex-direction: column !important;
         margin: 20px auto !important;
@@ -688,16 +752,68 @@ body {
         font-size: 16px !important;
     }
 
+    .hal3::after {
+        width: 101.7%;
+    }
+
+    /*------------hal4---------------------*/
+
     .hal4 {
+        width: 100%;
+        display: flex;
         flex-direction: column !important;
         align-items: center !important;
         height: auto !important;
-        padding: 20px !important;
     }
-    .pengalaman, .project {
-        width: 90% !important;
-        margin: 10px auto !important;
-        height: auto !important;
+
+    .pengalaman {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .pengalaman ul {
+        margin-top: 30px !important;
+        font-size: 14px;
+    }
+
+    .jp1 {
+        font-size: 24px;
+    }
+
+    .tp1 {
+        font-size: 20px;
+    }
+
+    .project h2 {
+        display: flex;
+        margin-left: 80px !important;
+        margin: 0px;
+        margin-top: -50px;
+        margin-bottom: 30px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .kp1 {
+        margin: 0px;
+        margin-top: 20px;
+        margin-left: 25px;
+        width: 300px;
+        height: 180px; 
+    }
+
+    .pno2 {
+        line-height: 1;
+    }
+
+    /*------------hal5---------------------*/
+
+    .jh5 {
+        padding-top: 100px !important;
+        padding-bottom: 20px;
     }
 
     .hal5 {
@@ -718,17 +834,29 @@ body {
     .jh5 {
         margin: 20px auto !important;
         text-align: center !important;
-        font-size: 24px !important;
-    }
-    .hal3 h2 {
-        margin: 20px auto !important;
-        text-align: center !important;
-        font-size: 28px !important;
+        font-size: 26px !important; /* konsisten */
     }
 
-    .jh5 {
-        margin: 20px auto !important;
-        text-align: center !important;
-        font-size: 26px !important;
+    .bh5_1, .bh5, .bh5_2, .bh5n_2 {
+        margin-bottom: 30px !important;
+    }
+
+    .bh5n {
+        margin-bottom: 50px !important;
+    }
+
+    /*------------- fix elemen 101.7% agar center dan tidak geser X -------------*/
+    .hal1::after,
+    .hal2::before,
+    .hal2::after,
+    .hal3::before,
+    .hal3::after,
+    .bghal1,
+    .bghal2,
+    .bghal3 {
+        width: 101.7%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-x: hidden;
     }
 }
